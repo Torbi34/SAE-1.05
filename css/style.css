@@ -26,7 +26,13 @@ nav{
 nav>div {
     display: inline;
     height: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+nav>div:first-child{
     margin-left: auto;
+}
+nav>div:last-child{
     margin-right: auto;
 }
 nav .submenu{

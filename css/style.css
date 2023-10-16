@@ -240,4 +240,9 @@ footer {
     border-radius: 5px;
     color: white;
 }
-
+img.meteorite{
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}

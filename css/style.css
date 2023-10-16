@@ -59,12 +59,21 @@ nav a {
 .hero a {
     text-align: center;
     display: inline-block;
-    background-image: linear-gradient(to right, #557f1f, #a2a6a9);
+    background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
+@keyframes clignoter {
+    0%   { color: #f5e722; }
+    40%   {color: #9cfc8c; }
+    100% { opacity: initial; }
 }
 
 .destinations {

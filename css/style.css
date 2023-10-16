@@ -14,39 +14,21 @@ body {
 
 header {
     position: fixed;
-    top: 0;
+    top: 0;/* */
     left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, transparent, #95d342),
+    background: linear-gradient(to bottom, transparent, transparent),
     url('../image/banniere_matrix.jpg');
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    z-index: 1; /* Augmentez le z-index du header pour le placer au-dessus des autres éléments */
+
 }
-
-.hero a {
-    text-align: center;
-    display: inline-block;
-    background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    animation-duration: .8s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
-    z-index: 0; /* Diminuez le z-index du bouton pour le placer en dessous du header */
-}
-
-
 nav{
     display:flex;
 }
 nav>div {
-    display: inline;
+    display: block;
     height: 20px;
     margin-left: 3%;
     margin-right: 3%;
@@ -98,8 +80,20 @@ nav a {
     margin-top: 20px;
 }
 
+.hero a {
+    text-align: center;
+    /*display: inline-block;*/
+    background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    animation-duration: .8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+}
 @keyframes clignoter {
-
     0%   { color: #f5e722; }
     40%   {color: #9cfc8c; }
     100% { opacity: initial; }
@@ -114,7 +108,7 @@ nav a {
 
 .destination {
     /*margin: 0px;*/
-    display: inline-block;
+    /*display: inline-block;*/
     width: 600px;
     color: #000000;
     flex-direction: row !important;

@@ -1,5 +1,6 @@
 /* Styles de base */
 html{
+    scroll-behavior: smooth;
     height: 100vh;
     background-image: linear-gradient(rgb(241, 207, 123), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
 }
@@ -14,7 +15,7 @@ body {
 
 header {
     position: fixed;
-    top: 0;/* */
+    top: 0;
     left: 0;
     width: 100%;
     background: linear-gradient(to bottom, transparent, transparent),
@@ -22,7 +23,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-
+    z-index: 1; /* Augmentez le z-index du header pour le placer au-dessus des autres éléments */
 }
 nav{
     display:flex;
@@ -82,16 +83,18 @@ nav a {
 
 .hero a {
     text-align: center;
-    /*display: inline-block;*/
+    display: inline-block;
     background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
     animation-duration: .8s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
+    z-index: 0; /* Diminuez le z-index du bouton pour le placer en dessous du header */
 }
 @keyframes clignoter {
     0%   { color: #f5e722; }
@@ -239,5 +242,20 @@ footer {
     background-image: linear-gradient(#b99959, #f3e4b4);
     border-radius: 5px;
     color: white;
+}
+#salle1 {
+    padding-top: 100px;
+}
+#salle2 {
+    padding-top: 150px;
+}
+#salle3 {
+    padding-top: 150px;
+}
+#salle4 {
+    padding-top: 150px;
+}
+#salle5 {
+    padding-top: 150px;
 }
 

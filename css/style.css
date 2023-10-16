@@ -43,7 +43,7 @@ nav>div:hover .submenu{
     padding:10px;
 }
 div.submenu>div{
-    padding: 2% 10%;
+    padding: 5% 1% ;
     position: relative;
 }
 div.submenu{

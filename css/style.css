@@ -200,7 +200,9 @@ footer {
     border-radius: 5px;
     color: white;
 }
-
+#presentation{
+    margin-top: 100px;
+}
 .titre2{
     margin : auto;
     width: 120px;
@@ -240,4 +242,9 @@ footer {
     border-radius: 5px;
     color: white;
 }
-
+img.meteorite{
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}

@@ -99,36 +99,90 @@ nav a {
     100% { opacity: initial; }
 }
 
-.destinations {
-    padding: 40px;
-    text-align: center;
-    color: #000000;
-
+#salle3 > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
 }
 
-.destination {
-    /*margin: 0px;*/
-    /*display: inline-block;*/
-    width: 600px;
-    color: #000000;
-    flex-direction: row !important;
-}
-/*
-.destinations h2{
-    margin : auto;
-    width: 120px;
-    text-align: center;
-    padding:10px 10px 10px 10px;
-    background-image: linear-gradient(#f68326, #ffff25);
-    border-radius: 5px;
-    color: white;
+#salle3 > div > img {
+    margin-right: 30%;
+    height: 40%;
+    width: 40%;
 }
 
- */
+.imggauche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-.destination img {
-    max-width: 100%;
-    padding: 30px;
+.imgdroite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#salle2>div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+#salle2 > div > img {
+    margin-left: 20%;
+    height: 40%;
+    width: 40%;
+}
+
+#salle4>div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+#salle4 > div > img {
+    margin-left: 20%;
+    height: 40%;
+    width: 40%;
+}
+#salle5 > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+#salle5 > div > img {
+    margin-right: 30%;
+    height: 40%;
+    width: 40%;
+}
+
+#salle1 > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+#salle1 > div > img {
+    margin: auto;
+    height: 25%;
+    width: 25%;
+}
+.imgc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {

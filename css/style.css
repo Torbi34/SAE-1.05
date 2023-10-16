@@ -20,15 +20,29 @@ header {
     padding: 20px 0;
 
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
+nav{
+    display:flex;
 }
-
-nav li {
+nav>div {
     display: inline;
-    margin-right: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav .submenu{
+    display: none;
+}
+nav>div:hover .submenu{
+    display: block;
+    padding:10px 0px ;
+}
+div.submenu>div{
+    padding: 3px 10px;
+    position: relative;
+}
+div.submenu{
+    border-radius: 5px;
+    background-image: linear-gradient(#2e6219, #9cd170);
 }
 
 nav a {

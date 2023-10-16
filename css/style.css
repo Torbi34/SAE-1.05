@@ -1,10 +1,10 @@
 /* Styles de base */
 html{
     height: 100vh;
-    background-image: linear-gradient(rgb(241, 207, 123), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(49, 40, 115), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
 }
 body {
-    background-image: linear-gradient(rgb(124, 211, 52), rgb(206, 206, 206), rgb(66, 83, 91), rgb(66, 83, 91),rgb(229, 187, 100), rgb(115, 73, 44),rgb(241, 207, 123),rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100),#E5A058FF, #CB9430FF,#CAAED5FF,#312873FF);
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,7 +18,7 @@ header {
     left: 0;
     width: 100%;
     background: linear-gradient(to bottom, transparent,transparent),
-    url('../image/banniere_matrix.jpg');
+    url('../image/voyage-temps.jpeg');
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -53,7 +53,7 @@ div.submenu>div{
 }
 div.submenu{
     border-radius: 5px;
-    background-image: linear-gradient(#2e6219, #9cd170);
+    background-image: linear-gradient(#070d12, #464e5e);
 }
 
 nav a {
@@ -76,7 +76,7 @@ nav a {
     margin: auto;
     text-align: center;
     width: 200px;
-    background-image: linear-gradient(#2e6219, #9cd170);
+    background-image: linear-gradient(#142c41, #1a2630);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -84,6 +84,7 @@ nav a {
     margin-top: 150px;
     margin-bottom: 50px;
     font-family: Arial;
+
 }
 
 /*display: inline-block;*/
@@ -91,7 +92,7 @@ nav a {
 .hero_a {
     margin-top: 50px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
+    background-image: linear-gradient(to bottom, #233541, #344f61);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -104,8 +105,8 @@ nav a {
 }
 
 @keyframes clignoter {
-    0%   { color: #f5e722; }
-    40%   {color: #9cfc8c; }
+    0%   { color: #35aaf1; }
+    40%   {color: #6161fa; }
     100% { opacity: initial; }
 }
 
@@ -239,8 +240,8 @@ nav a {
 }
 
 footer {
-    background-image: linear-gradient(#fdf7e8, #fbcf27);
-    color: #000000;
+    background-image: linear-gradient(#4e3f85, #8e1dfc);
+    color: #ffffff;
     text-align: center;
     padding: 40px;
 }
@@ -249,7 +250,7 @@ footer {
     width: 120px;
     text-align: center;
     padding:10px 10px;
-    background-image: linear-gradient(#9fd25b, #c9c9ca);
+    background-image: linear-gradient(#283c49, #496071);
     border-radius: 5px;
     color: white;
 }
@@ -259,7 +260,7 @@ footer {
     width: 120px;
     text-align: center;
     padding:10px 10px 10px 10px;
-    background-image: linear-gradient(#727b81, #46545c);
+    background-image: linear-gradient(#54687a, #586068);
     border-radius: 5px;
     color: white;
 }
@@ -269,7 +270,7 @@ footer {
     width: 120px;
     text-align: center;
     padding:10px 10px 10px 10px;
-    background-image: linear-gradient(#58615d, #dab961);
+    background-image: linear-gradient(#6b6863, #da9f52);
     border-radius: 5px;
     color: white;
 }
@@ -279,7 +280,7 @@ footer {
     width: 120px;
     text-align: center;
     padding:10px 10px 10px 10px;
-    background-image: linear-gradient(#704a2d, #b39256);
+    background-image: linear-gradient(#6e562c, #c59d63);
     border-radius: 5px;
     color: white;
 }
@@ -289,7 +290,7 @@ footer {
     width: 120px;
     text-align: center;
     padding:10px 10px 10px 10px;
-    background-image: linear-gradient(#b99959, #f3e4b4);
+    background-image: linear-gradient(#c5a07c, #8975ad);
     border-radius: 5px;
     color: white;
 }

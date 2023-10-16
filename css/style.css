@@ -48,7 +48,7 @@ nav a {
 .hero h2 {
     text-align: center;
     display: inline-block;
-    background-image: linear-gradient(#3f3fa8, #9cd170);
+    background-image: linear-gradient(#2e6219, #9cd170);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -59,7 +59,7 @@ nav a {
 .hero a {
     text-align: center;
     display: inline-block;
-    background-image: linear-gradient(#3f3fa8, #c7cfc1);
+    background-image: linear-gradient(to right, #557f1f, #a2a6a9);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -81,7 +81,7 @@ nav a {
     color: #000000;
     flex-direction: row !important;
 }
-
+/*
 .destinations h2{
     margin : auto;
     width: 120px;
@@ -91,6 +91,8 @@ nav a {
     border-radius: 5px;
     color: white;
 }
+
+ */
 
 .destination img {
     max-width: 100%;
@@ -103,3 +105,53 @@ footer {
     text-align: center;
     padding: 40px;
 }
+.titre1{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#9fd25b, #c9c9ca);
+    border-radius: 5px;
+    color: white;
+}
+
+.titre2{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#727b81, #46545c);
+    border-radius: 5px;
+    color: white;
+}
+
+.titre3{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#58615d, #dab961);
+    border-radius: 5px;
+    color: white;
+}
+
+.titre4{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#704a2d, #b39256);
+    border-radius: 5px;
+    color: white;
+}
+
+.titre5{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#b99959, #f3e4b4);
+    border-radius: 5px;
+    color: white;
+}
+

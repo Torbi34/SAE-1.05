@@ -40,7 +40,7 @@ nav .submenu{
 }
 nav>div:hover .submenu{
     display: block;
-    padding:10px 0px ;
+    padding:10px;
 }
 div.submenu>div{
     padding: 2% 10%;
@@ -104,7 +104,7 @@ nav a {
 }
 
 .destination {
-    margin: 0px;
+    /*margin: 0px;*/
     display: inline-block;
     width: 600px;
     color: #000000;

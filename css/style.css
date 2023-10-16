@@ -22,6 +22,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    z-index: 1; /* Augmentez le z-index du header pour le placer au-dessus des autres éléments */
 
 }
 nav{
@@ -63,26 +64,33 @@ nav a {
 .hero {
     padding: 60px;
     text-align: center;
-    margin: 20px;
-    display: inline-block;
+    margin: auto;
     width: 600px;
     color: white;
+    font-weight: bold;
+    font-family: "Bradley Hand ITC";
+    font-size: 18px;
 }
 
 .hero h2 {
+    margin: auto;
     text-align: center;
-    display: inline-block;
+    width: 200px;
     background-image: linear-gradient(#2e6219, #9cd170);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: Arial;
 }
 
-.hero a {
+/*display: inline-block;*/
+
+.hero_a {
+    margin-top: 50px;
     text-align: center;
-    /*display: inline-block;*/
     background-image: linear-gradient(to bottom, #1c5e0b, #c0cfaa);
     color: #fff;
     padding: 10px 20px;
@@ -92,7 +100,9 @@ nav a {
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
+    z-index: 0;
 }
+
 @keyframes clignoter {
     0%   { color: #f5e722; }
     40%   {color: #9cfc8c; }
@@ -108,9 +118,18 @@ nav a {
 }
 
 #salle3 > div > img {
-    margin-right: 30%;
-    height: 40%;
-    width: 40%;
+    margin-left: 5%;
+    margin-right: 10%;
+    height: 24%;
+    width: 24%;
+}
+#salle3 > div > div >p{
+    text-align: center;
+    font-family: "Cambria Math";
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
 .imggauche {
@@ -127,7 +146,7 @@ nav a {
     justify-content: center;
 }
 
-#salle2>div{
+#salle2 > div{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -135,9 +154,17 @@ nav a {
     margin: 50px;
 }
 #salle2 > div > img {
-    margin-left: 20%;
-    height: 40%;
-    width: 40%;
+    margin-left: 10%;
+    height: 28%;
+    width: 28%;
+}
+#salle2 > div > div > p{
+    text-align: center;
+    font-family: "Cambria Math";
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
 #salle4>div{
@@ -148,9 +175,18 @@ nav a {
     margin: 50px;
 }
 #salle4 > div > img {
-    margin-left: 20%;
+    margin-left: 10%;
     height: 40%;
-    width: 40%;
+    width: 38%;
+}
+
+#salle4 > div > div > p{
+    text-align: center;
+    font-family: "Cambria Math";
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 #salle5 > div {
     display: flex;
@@ -161,22 +197,39 @@ nav a {
 }
 
 #salle5 > div > img {
-    margin-right: 30%;
+    margin-right: 10%;
     height: 40%;
     width: 40%;
 }
-
+#salle5 > div > div > p{
+    text-align: center;
+    font-family: "Cambria Math";
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
 #salle1 > div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin: 50px;
+    margin: 20px 200px 20px;
 }
+#salle1 > p{
+    padding: 20px;
+    text-align: center;
+    margin: 20px 200px 20px;
+    font-family: "Cambria Math";
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
 #salle1 > div > img {
-    margin: auto;
+    margin: 30px;
     height: 25%;
-    width: 25%;
+    width: 29%;
 }
 .imgc {
     display: flex;
@@ -195,7 +248,7 @@ footer {
     margin : auto;
     width: 120px;
     text-align: center;
-    padding:10px 10px 10px 10px;
+    padding:10px 10px;
     background-image: linear-gradient(#9fd25b, #c9c9ca);
     border-radius: 5px;
     color: white;
@@ -245,4 +298,19 @@ img.meteorite{
     position: fixed;
     bottom: 50px;
     right: 20px;
+}
+#salle1 {
+    padding-top: 130px;
+}
+#salle2 {
+    padding-top: 150px;
+}
+#salle3 {
+    padding-top: 150px;
+}
+#salle4 {
+    padding-top: 150px;
+}
+#salle5 {
+    padding-top: 150px;
 }

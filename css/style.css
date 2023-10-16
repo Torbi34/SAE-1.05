@@ -1,15 +1,23 @@
 /* Styles de base */
+html{
+    height: 100vh;
+    background-image: linear-gradient(rgb(241, 207, 123), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
+}
 body {
+    background-image: linear-gradient(rgb(124, 211, 52), rgb(206, 206, 206), rgb(66, 83, 91), rgb(66, 83, 91),rgb(229, 187, 100), rgb(115, 73, 44),rgb(241, 207, 123),rgb(255, 255, 255));
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
-    background-color: #333;
+    background-image: linear-gradient(#00008b, #8dd253);
     color: #fff;
     text-align: center;
     padding: 20px 0;
+
 }
 
 nav ul {
@@ -28,20 +36,29 @@ nav a {
 }
 
 .hero {
-    background-image: url('SAE-1.05/image');
-    background-size: cover;
+    padding: 60px;
     text-align: center;
-    padding: 100px 0;
-    color: #fff;
+    margin: 20px;
+    display: inline-block;
+    width: 600px;
+    color: white;
 }
 
 .hero h2 {
-    font-size: 36px;
+    text-align: center;
+    display: inline-block;
+    background-image: linear-gradient(#3f3fa8, #9cd170);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 .hero a {
+    text-align: center;
     display: inline-block;
-    background-color: #333;
+    background-image: linear-gradient(#3f3fa8, #c7cfc1);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -52,21 +69,40 @@ nav a {
 .destinations {
     padding: 40px;
     text-align: center;
+    color: #000000;
+
 }
 
 .destination {
-    margin: 20px;
+    margin: 0px;
     display: inline-block;
     width: 600px;
+    color: #000000;
+    flex-direction: row !important;
+}
+
+.destinations h2{
+    margin : auto;
+    width: 120px;
+    text-align: center;
+    padding:10px 10px 10px 10px;
+    background-image: linear-gradient(#f68326, #ffff25);
+    border-radius: 5px;
+    color: white;
 }
 
 .destination img {
     max-width: 100%;
+    padding: 30px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-image: linear-gradient(#fdf7e8, #fbcf27);
+    color: #000000;
     text-align: center;
-    padding: 10px 0;
+    padding: 40px;
+}
+
+#gauche{
+    float: left;
 }

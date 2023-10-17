@@ -57,12 +57,15 @@ div.submenu{
     border-radius: 5px;
     background-image: linear-gradient(#070d12, #464e5e);
 }
+div.submenu > div > a{
+    color: white;
+}
 
 nav a {
     text-decoration: none;
 }
 nav a, nav>div{
-    color: black;
+    color: #000000;
 }
 
 .synopsis {

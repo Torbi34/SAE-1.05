@@ -27,9 +27,10 @@ header {
 }
 nav{
     display:flex;
+    position: sticky;
 }
 nav>div {
-    display: block;
+    /*display: block;*/
     height: 20px;
     margin-left: 3%;
     margin-right: 3%;
@@ -51,6 +52,7 @@ div.submenu>div{
     padding: 5% 1% ;
     position: relative;
 }
+
 div.submenu{
     border-radius: 5px;
     background-image: linear-gradient(#070d12, #464e5e);
@@ -61,7 +63,7 @@ nav a {
     color: #fff;
 }
 
-.hero {
+.synopsis {
     padding: 60px;
     text-align: center;
     margin: auto;
@@ -72,7 +74,7 @@ nav a {
     font-size: 18px;
 }
 
-.hero h2 {
+.synopsis h2 {
     margin: auto;
     text-align: center;
     width: 200px;
@@ -86,10 +88,7 @@ nav a {
     font-family: Arial;
 
 }
-
-/*display: inline-block;*/
-
-.hero_a {
+.bouton{
     margin-top: 50px;
     text-align: center;
     background-image: linear-gradient(to bottom, #233541, #344f61);

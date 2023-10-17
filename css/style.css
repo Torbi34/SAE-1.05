@@ -1,5 +1,6 @@
 /* Styles de base */
 html{
+    scroll-behavior: smooth;
     height: 100vh;
     background-image: linear-gradient(rgb(49, 40, 115), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
 }

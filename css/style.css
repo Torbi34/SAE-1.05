@@ -135,6 +135,7 @@ nav a, nav>div{
     font-size: 25px;
     background-color: transparent;
     border-radius: 10px;
+    padding: 5px 5px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
@@ -319,4 +320,7 @@ img.meteorite{
 }
 #salle5 {
     padding-top: 150px;
+}
+.text{
+    padding: 5% 5%;
 }

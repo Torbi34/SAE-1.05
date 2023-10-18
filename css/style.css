@@ -249,7 +249,7 @@ footer {
     background-image: linear-gradient(#4e3f85, #8e1dfc);
     color: #ffffff;
     text-align: center;
-    padding: 40px;
+    padding: 80px;
 }
 .titre1{
     margin : auto;
@@ -323,4 +323,27 @@ img.meteorite{
 }
 .text{
     padding: 5% 5%;
+}
+img.insta {
+    position: relative;
+    height: 90px;
+    right: 830px;
+    bottom: 10px;
+}
+.reseaux{
+    position: relative;
+    right: 650px;
+    bottom: 150px;
+}
+img.X{
+    position: relative;
+    height: 90px;
+    right: 790px;
+    bottom: 10px;
+}
+img.meta{
+    position: relative;
+    height: 90px;
+    right: 600px;
+    bottom: 150px;
 }

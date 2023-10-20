@@ -74,7 +74,7 @@ nav a, nav>div{
     text-align: center;
     margin: auto;
     width: 600px;
-    color: white;
+    color: #c8e9ff;
     font-weight: bold;
     font-family: "Bradley Hand ITC";
     font-size: 18px;
@@ -130,12 +130,12 @@ nav a, nav>div{
     width: 24%;
 }
 #salle3 > div > div >p{
+    color: #f8d4a7;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 25px;
-    background-color: transparent;
+    background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
-    padding: 5px 5px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
@@ -166,10 +166,11 @@ nav a, nav>div{
     width: 28%;
 }
 #salle2 > div > div > p{
+    color: #d3d3d3;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 25px;
-    background-color: transparent;
+    background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
@@ -188,10 +189,11 @@ nav a, nav>div{
 }
 
 #salle4 > div > div > p{
+    color: #f1d8c5;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 25px;
-    background-color: transparent;
+    background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
@@ -209,10 +211,11 @@ nav a, nav>div{
     width: 40%;
 }
 #salle5 > div > div > p{
+    color: #e2d3f8;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 25px;
-    background-color: transparent;
+    background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
@@ -223,12 +226,13 @@ nav a, nav>div{
     margin: 20px 200px 20px;
 }
 #salle1 > p{
+    color: #c3d4ff;
     padding: 20px;
     text-align: center;
     margin: 20px 200px 20px;
     font-family: "Cambria Math";
     font-size: 20px;
-    background-color: transparent;
+    background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
@@ -246,7 +250,7 @@ nav a, nav>div{
 }
 
 footer {
-    background-color: black;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 100px;
@@ -333,8 +337,8 @@ img.meteorite{
     margin: -130px 0 0 0;
 }
  #facebook {
-     height: 91px;
-     width: 91px;
+     height: 85px;
+     width: 85px;
  }
 #insta {
     height: 80px;
@@ -346,17 +350,26 @@ img.meteorite{
 }
 #youtube{
     height: 80px;
-    width: 110px;
+    width: 114px;
 }
 .trait{
     display: inline-block;
     border-top: 1px solid white;
     height: 100%;
+    text-decoration:none;
+    color: white;
+    font-style: normal;
+
 }
 #logo{
     float: right;
     margin:  -180px 180px 0 0;
     height: 250px;
     width: 250px;
-
+    filter:invert();
+}
+address{
+    text-decoration:none;
+    color: white;
+    font-style: normal;
 }

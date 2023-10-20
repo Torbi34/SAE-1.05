@@ -326,11 +326,37 @@ img.meteorite{
 }
 .imgf{
     float: left;
-    margin: -80px 0 10px 10px;
-    height: 80px;
-    width: 80px;
+    margin: -80px 0 5px 50px;
 }
 .reseau{
     float: left;
     margin: -130px 0 0 0;
+}
+ #facebook {
+     height: 95px;
+     width: 95px;
+ }
+#insta {
+    height: 80px;
+    width: 80px;
+}
+#x{
+    height: 80px;
+    width: 80px;
+}
+#youtube{
+    height: 80px;
+    width: 110px;
+}
+.trait{
+    display: inline-block;
+    border-top: 1px solid white;
+    height: 100%;
+}
+#logo{
+    float: right;
+    margin:  -180px 180px 0 0;
+    height: 250px;
+    width: 250px;
+
 }

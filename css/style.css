@@ -328,14 +328,6 @@ img.meteorite{
 .text{
     padding: 5% 5%;
 }
-.imgf{
-    float: left;
-    margin: -80px 0 5px 50px;
-}
-.reseau{
-    float: left;
-    margin: -130px 0 0 0;
-}
  #facebook {
      height: 85px;
      width: 85px;
@@ -352,18 +344,7 @@ img.meteorite{
     height: 80px;
     width: 114px;
 }
-.trait{
-    display: inline-block;
-    border-top: 1px solid white;
-    height: 100%;
-    text-decoration:none;
-    color: white;
-    font-style: normal;
-
-}
 #logo{
-    float: right;
-    margin:  -180px 180px 0 0;
     height: 250px;
     width: 250px;
     filter:invert();
@@ -372,4 +353,10 @@ address{
     text-decoration:none;
     color: white;
     font-style: normal;
+}
+.imagefooter > img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

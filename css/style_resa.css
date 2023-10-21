@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    margin: 15px 350px 15px;
+    border-radius: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+.s{
+    text-align: center;
+    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    padding: 20px;
+    margin: 20px 120px 20px;
+    border-radius: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+#first > div{
+    margin: 5px;
+}
+#first > div > label{
+    background-color: #d8f5ff;
+    border-radius: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+#first > div > input {
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 30px;
+}
+#first > div > select{
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 30px;
+}
+.t{
+    text-align: center;
+    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    padding: 20px;
+    margin: 20px 400px 20px;
+    border-radius: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+}
+#sub > input{
+    background-color: rgb(71, 71, 236);
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+    background-position: top left;
+    background-image: url("/home/nathan/Images/pngtree-future-interstellar-smart-technology-background-intelligenceilluminatetechnologydynamicgridgradientbusinessblue-backgroundsquareinterstellarfuture-image_72288.jpg");
+    background-position:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+}

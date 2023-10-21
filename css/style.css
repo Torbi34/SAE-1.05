@@ -2,7 +2,7 @@
 html{
     scroll-behavior: smooth;
     height: 100vh;
-    background-image: linear-gradient(rgb(49, 44, 75), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100),#E5A058FF, #CB9430FF,#CAAED5FF,#312873FF);
 }
 body {
     background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100),#E5A058FF, #CB9430FF,#CAAED5FF,#312873FF);

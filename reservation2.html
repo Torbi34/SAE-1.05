@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservation</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/style_resa.css">
+    </head>
+    <body class="body">
+        <h1 class="title1">Date et Heure</h1>
+        <form action="send.php" method="post">
+            <article class="s" id="first">
+                <div>
+                    <label for="choose">Choisir votre Salle:</label>
+                    <select id="choose">
+                        <option value="1">Voyage temporel</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Choisir votre date:</label>
+                    <input id="date" type="date">
+                </div>
+                <div>
+                    <label for="hour">Choisez votre heure:</label>
+                    <input id="hour" type="time">
+                </div>
+                <div>
+                <label for="choose2">Choisir le nombre de personnes:</label>
+                    <select id="choose2">
+                        <option value="2">2 personnes, 30 euros</option>
+                        <option value="3">3 personnes, 40 euros</option>
+                        <option value="4">4 personnes, 45 euros</option>
+                    </select>
+                </div>
+            </article>
+            <h1 class="title1">Information personnel</h1>
+            <article class="s" id="first">
+                <div>
+                    <label for="name">Nom:</label>
+                    <input id="name" required placeholder="Entrez votre nom" type="text">
+                </div>
+                <div>
+                    <label for="surname">Prenom:</label>
+                    <input id="surname" required placeholder="Entrez votre prenom" type="text">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" required placeholder="Entrez votre mail" type="email">
+                </div>
+                <div>
+                    <label for="tel">Telephone:</label>
+                    <input id="tel" required placeholder="Entrez votre n°" type="tel">
+                </div>
+            </article>
+            <h1 class="title1">Autres Informations</h1>
+            <article class="s" id="first">
+                <div>
+                <label for="ecrire">Ecrire des informations suplémentaire...</label>
+                </div>
+                <div>
+                <textarea id="ecrire" rows="3" cols="80">
+                </textarea>
+                </div>
+            </article>
+            <article class="t" id="sub">
+                <input type="submit" value="ENVOYER">
+            </article>
+        </form>
+        
+    </body>
+
+
+
+
+</html>

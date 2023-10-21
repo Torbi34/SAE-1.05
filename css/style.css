@@ -342,11 +342,11 @@ address{
     align-items: center;
 }
 #contact > div > img {
-    margin: 0px  300px 0px 300px ;
+    margin: 0px  300px 0px 180px ;
 }
 #gauche > p{
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
 }
 .imgfooter{
     margin: 0px  10px 0px 10px ;
@@ -354,3 +354,8 @@ address{
 .imglogo{
     margin: 0px  10px 0px 10px ;
 }
+.under{
+    color: white;
+    text-decoration: none;
+}
+

@@ -225,14 +225,20 @@ nav a, nav>div {
     height: 40%;
     width: 40%;
 }
-#salle5 > div > div > p{
+
+#salle5 > div > div {
+    flex: 1; /* Utilisation d'un flex-grow pour que le texte occupe l'espace disponible */
+    padding: 20px; /* Ajustez l'espacement interne selon vos besoins */
+}
+
+#salle5 > div > div > p {
     color: #e2d3f8;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 25px;
     background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 #salle1 > div {
     display: flex;
@@ -420,10 +426,15 @@ address {
     width: 300%; /* Augmentation de la largeur à 40% de l'espace parent */
 }
 
-#salle4 > div > img, #salle5 > div > img {
+#salle4 > div > img {
     margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
     height: 50%; /* Augmentation de la hauteur à 40% de l'espace parent */
     width: 50%; /* Augmentation de la largeur à 40% de l'espace parent */
+}
+#salle5 > div > img {
+    margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
+    height: 30%; /* Augmentation de la hauteur à 40% de l'espace parent */
+    width: 30%; /* Augmentation de la largeur à 40% de l'espace parent */
 }
 
 /* Pour ajouter de l'espace entre le texte et l'image */

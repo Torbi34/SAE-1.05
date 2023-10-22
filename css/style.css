@@ -498,4 +498,11 @@ address {
     #gif.fullscreen {
         font-size: 10px; /* Réduire la taille de la police pour les smartphones */
     }
+    
+}
+@media screen and (max-width: 1400px) {
+    .progress-container {
+        margin-top: 20px; /* Ajouter une marge supérieure pour déplacer la barre de progression plus bas */
+        bottom: 85%; /* À 85% du bas de la page */
+    }
 }

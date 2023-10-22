@@ -184,27 +184,33 @@ nav a, nav>div {
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5); /* Ombre de la boîte */
 }
 
-#salle4>div{
+#salle4 > div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    margin: 50px;
-}
-#salle4 > div > img {
-    margin-left: 10%;
-    height: 38%;
-    width: 38%;
+    margin: 200px;
 }
 
-#salle4 > div > div > p{
+#salle4 > div > img {
+    margin-left: 10%;
+    height: 30%;
+    width: 30%;
+}
+
+#salle4 > div > div {
+    flex: 1; /* Utilisation d'un flex-grow pour que le texte occupe l'espace disponible */
+    padding: 20px; /* Ajustez l'espacement interne selon vos besoins */
+}
+
+#salle4 > div > div > p {
     color: #f1d8c5;
     text-align: center;
     font-family: "Cambria Math";
     font-size: 21px;
     background-color: rgba(133, 133, 133, 0.24);
     border-radius: 10px;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
 }
 #salle5 > div {
     display: flex;
@@ -416,8 +422,8 @@ address {
 
 #salle4 > div > img, #salle5 > div > img {
     margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
-    height: 100%; /* Augmentation de la hauteur à 40% de l'espace parent */
-    width: 100%; /* Augmentation de la largeur à 40% de l'espace parent */
+    height: 50%; /* Augmentation de la hauteur à 40% de l'espace parent */
+    width: 50%; /* Augmentation de la largeur à 40% de l'espace parent */
 }
 
 /* Pour ajouter de l'espace entre le texte et l'image */

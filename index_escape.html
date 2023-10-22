@@ -210,19 +210,25 @@
     
         // Écouter l'événement de clic sur l'image de la météorite
         meteorite.addEventListener("click", () => {
-            gif.style.display = "block"; // Afficher le GIF
-            audio.play(); // Jouer le fichier audio
-    
-            document.documentElement.style.overflow = "hidden"; // Masquer la barre de défilement
-    
-            // Définir un délai pour arrêter l'audio, masquer le GIF et rétablir la barre de défilement
-            setTimeout(() => {
-                audio.pause(); // Arrêter l'audio
-                audio.currentTime = 0; // Remettre l'audio au début
-                gif.style.display = "none"; // Cacher le GIF
-                document.documentElement.style.overflow = "auto"; // Rétablir la propriété overflow à sa valeur par défaut
-            }, 2000); // Attendre 2 secondes (2000 millisecondes) avant d'exécuter cette partie du code
-        });
+    gif.style.display = "block"; // Afficher le GIF
+    audio.play(); // Jouer le fichier audio
+
+    document.documentElement.style.overflow = "hidden"; // Masquer la barre de défilement
+
+    // Faire défiler la page vers l'élément avec l'ID "top"
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Ajoute un effet de défilement fluide
+    });
+
+    // Définir un délai pour arrêter l'audio, masquer le GIF et rétablir la barre de défilement
+    setTimeout(() => {
+        audio.pause(); // Arrêter l'audio
+        audio.currentTime = 0; // Remettre l'audio au début
+        gif.style.display = "none"; // Cacher le GIF
+        document.documentElement.style.overflow = "auto"; // Rétablir la propriété overflow à sa valeur par défaut
+    }, 2000); // Attendre 2 secondes (2000 millisecondes) avant d'exécuter cette partie du code
+});
     </script>
     </body>
     </html>

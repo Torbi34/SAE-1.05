@@ -506,8 +506,8 @@ address {
     }
     #salle2 > div > img, #salle3 > div > img, #salle4 > div > img, #salle5 > div > img {
         margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
-        height: 500%; /* Augmentation de la hauteur à 40% de l'espace parent */
-        width: 500%; /* Augmentation de la largeur à 40% de l'espace parent */
+        height: 50%; /* Augmentation de la hauteur à 40% de l'espace parent */
+        width: 50%; /* Augmentation de la largeur à 40% de l'espace parent */
     }
     /* Pour ajouter de l'espace entre le texte et l'image */
     #salle2 > div > div > p, #salle3 > div > div > p, #salle4 > div > div > p, #salle5 > div > div > p {

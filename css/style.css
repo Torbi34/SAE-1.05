@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    font-size: 16px;
     background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100), #E5A058FF, #CB9430FF, #CAAED5FF, #312873FF); /* Arrière-plan avec un dégradé linéaire */
     background-repeat: no-repeat; /* Empêcher la répétition de l'arrière-plan */
     font-family: Arial, sans-serif; /* Police de caractères */
@@ -366,7 +367,7 @@ address {
 }
 /* Styles pour la barre de progression en haut de la page */
 .progress-container {
-    background: black; /* Barre de progression rouge */
+    background: transparent; /* Barre de progression rouge */
     height: 5px; /* Hauteur de 5px */
     width: 100%; /* Largeur de 100% de la largeur de la vue */
     position: fixed; /* Position fixe en haut de la page */
@@ -415,4 +416,86 @@ address {
 /* Pour ajouter de l'espace entre le texte et l'image */
 #salle2 > div > div > p, #salle3 > div > div > p, #salle4 > div > div > p, #salle5 > div > div > p {
     margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Réduire la taille de la police pour les tablettes */
+    }
+    #salle1 > div,
+    #salle2 > div,
+    #salle3 > div,
+    #salle4 > div,
+    #salle5 > div {
+        flex-direction: column; /* Affichage en colonne pour les salles sur les tablettes */
+    }
+    #salle2 > div > img,
+    #salle3 > div > img,
+    #salle4 > div > img,
+    #salle5 > div > img {
+        margin-left: 0; /* Supprimer la marge à gauche des images sur les tablettes */
+        height: 100%; /* Ajuster la hauteur des images sur les tablettes */
+        width: 100%; /* Ajuster la largeur des images sur les tablettes */
+    }
+    #salle2 > div > div > p,
+    #salle3 > div > div > p,
+    #salle4 > div > div > p,
+    #salle5 > div > div > p {
+        margin-left: 0; /* Supprimer la marge à gauche du texte sur les tablettes */
+    }
+}
+
+/* Media query pour les écrans encore plus petits (par exemple, les smartphones) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px; /* Réduire davantage la taille de la police pour les smartphones */
+    }
+    header {
+        padding: 10px 0; /* Réduire l'espacement du haut pour les smartphones */
+    }
+    nav {
+        display: block; /* Affichage en bloc pour la navigation sur les smartphones */
+    }
+    nav > div {
+        margin: 5px 0; /* Ajouter de l'espacement entre les éléments de navigation */
+    }
+    .submenu {
+        padding: 5px; /* Réduire l'espacement du sous-menu pour les smartphones */
+    }
+    .synopsis {
+        padding: 10px; /* Réduire l'espacement pour la section synopsis sur les smartphones */
+        width: auto; /* Ajuster la largeur automatiquement */
+    }
+    .synopsis h2 {
+        margin: 50px 0; /* Ajouter de la marge supérieure et inférieure pour le titre de synopsis */
+    }
+    .bouton {
+        margin: 20px 0; /* Ajouter de la marge supérieure et inférieure pour le bouton */
+    }
+    #salle1 > div {
+        margin: 10px 0; /* Ajouter de l'espacement autour de la première salle pour les smartphones */
+    }
+    #salle1 > p {
+        margin: 10px 0; /* Ajouter de l'espacement autour du texte de la première salle pour les smartphones */
+    }
+    .progress-container {
+        display: none; /* Masquer la barre de progression pour les smartphones */
+    }
+    .meteorite {
+        display: none; /* Masquer la météorite pour les smartphones */
+    }
+    #contact > div > img {
+        margin: 0; /* Supprimer la marge autour de l'image de contact pour les smartphones */
+    }
+    .imgfooter {
+        margin: 0; /* Supprimer la marge autour des images de pied de page pour les smartphones */
+    }
+    .imglogo {
+        margin: 0; /* Supprimer la marge autour des images de logo pour les smartphones */
+    }
+    .overlay {
+        font-size: 10px; /* Réduire la taille de la police pour les smartphones */
+    }
+    #gif.fullscreen {
+        font-size: 10px; /* Réduire la taille de la police pour les smartphones */
+    }
 }

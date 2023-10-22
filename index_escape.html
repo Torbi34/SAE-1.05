@@ -1,32 +1,37 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html> <!-- Déclaration du type de document HTML -->
+<html lang="fr"> <!-- Balise d'ouverture de l'élément HTML avec la langue spécifiée -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Voyage Temporel</title>
-    <link rel="icon" href="image/favicon-32x32bg.png">
+    <meta charset="UTF-8"> <!-- Balise meta pour définir le jeu de caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Balise meta pour configurer l'affichage sur les appareils mobiles -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Lien vers une feuille de style externe -->
+    <title>Voyage Temporel</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link rel="icon" href="image/favicon-32x32bg.png"> <!-- Icône de l'onglet du navigateur -->
 </head>
 <body>
-
+    <div class="overlay" id="overlay"></div> <!-- Une div utilisée comme overlay pour masquer le contenu -->
+    <img id="gif" src="./image/gif7.gif" alt="GIF" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;"> <!-- Balise img pour afficher un GIF animé (initiallement caché) avec des styles CSS -->
+    <div id="overlay"></div> <!-- Redondance, cela crée un autre élément div avec le même ID -->
     <header>
+        <div class="progress-container"> <!-- Une div pour la barre de progression de défilement -->
+            <div class="progress-bar" id="progress-bar"></div> <!-- La barre de progression elle-même -->
+        </div>
         <div>
-        <h1>Voyage Temporel</h1>
-        <nav>
-                <div><a href="intro_escape.html">Accueil</a></div>
-                <div><a href="./reservation2.html">Reserver</a></div>
-                <div><a href="#top">Avis</a></div>
-                <div><a href="#contact">Contact</a></div>
-                <div>Les Salles
+            <h1>Voyage Temporel</h1> <!-- Titre principal de la page -->
+            <nav>
+                <div><a href="intro_escape.html">Accueil</a></div> <!-- Lien de navigation vers la page d'accueil -->
+                <div><a href="./reservation2.html">Réserver</a></div> <!-- Lien de navigation vers la page de réservation -->
+                <div><a href="#top">Avis</a></div> <!-- Lien interne vers la section "Avis" de la page -->
+                <div><a href="#contact">Contact</a></div> <!-- Lien interne vers la section "Contact" de la page -->
+                <div>Les Salles <!-- Lien de navigation déroulant vers différentes salles -->
                     <div class="submenu">
-                        <div><a href="#salle1">Salle 1</a></div>
-                        <div><a href="#salle2">Salle 2</a></div>
-                        <div><a href="#salle3">Salle 3</a></div>
-                        <div><a href="#salle4">Salle 4</a></div>
-                        <div><a href="#salle5">Salle 5</a></div>
+                        <div><a href="#salle1">Salle 1</a></div> <!-- Lien interne vers la "Salle 1" de la page -->
+                        <div><a href="#salle2">Salle 2</a></div> <!-- Lien interne vers la "Salle 2" de la page -->
+                        <div><a href="#salle3">Salle 3</a></div> <!-- Lien interne vers la "Salle 3" de la page -->
+                        <div><a href="#salle4">Salle 4</a></div> <!-- Lien interne vers la "Salle 4" de la page -->
+                        <div><a href="#salle5">Salle 5</a></div> <!-- Lien interne vers la "Salle 5" de la page -->
                     </div>
                 </div>
-        </nav>
+            </nav>
         </div>
     </header>
     <section class="synopsis">
@@ -56,19 +61,19 @@
             la planète en voyageant dans le temps. Ensuite, une porte coulissante qui était cachée dans l'une des parois s'ouvre,
             menant à la salle de transition temporelle.
 
-        <div>
-            <img class="imgc" src="image/cyber_gauche.png" alt="image salle 1">
-            <img class="imgc" src="image/rue_cyber.png" alt="image salle 1">
-            <img class="imgc" src="image/cyber_droite.png" alt="image salle 1">
-        </div>
-
-    </article>
-
-    <article id="salle2">
-        <h2 class="titre2">Salle n°2</h2>
-        <div>
-            <img class="imgdroite" src="image/chateau_neige.jpg" alt="image salle 2">
             <div>
+                <img class="imgc" src="image/cyber_gauche.png" alt="image salle 1"> <!-- Image de gauche de la salle 1 avec classe "imgc" -->
+                <img class="imgc" src="image/rue_cyber.png" alt="image salle 1"> <!-- Image du milieu de la salle 1 avec classe "imgc" -->
+                <img class="imgc" src="image/cyber_droite.png" alt="image salle 1"> <!-- Image de droite de la salle 1 avec classe "imgc" -->
+            </div> <!-- Fermeture de la division contenant les images -->
+    
+        </article> <!-- Fermeture de l'article pour la salle 1 -->
+    
+        <article id="salle2"> <!-- Début de l'article pour la salle 2 avec un identifiant "salle2" -->
+            <h2 class="titre2">Salle n°2</h2> <!-- Un titre de niveau 2 pour la salle 2 avec une classe "titre2" -->
+            <div> <!-- Une division pour le contenu de la salle 2 -->
+                <img class="imgdroite" src="image/chateau_neige.jpg" alt="image salle 2"> <!-- Image à droite de la salle 2 avec classe "imgdroite" -->
+                <div> <!-- Une autre division pour le texte de la salle 2 -->
                 <p class="text">Ici les joueurs seront au coeur d'un château lugubre et isolé, vous arriverez directement dans une salle où le garde dort. Vous devrez
                     lui voler les clés afin d'ouvrir la trappe menant au donjon. ATTENTION à ne pas le réveiller (cela dure tout
                     le long de cette salle), car celui-ci se mettra à marcher de son pas lourd, ce qui peut vous faire perdre du
@@ -104,14 +109,13 @@
                     de déterminer l'ordre correct des boutons à presser pour accéder à la chambre du capitaine et ainsi recupréré
                     le grigri du capitaine et la notice pour terminer cette étape. Bon courage, moussaillon !</p>
             </div>
-        </div>
-    </article>
+        </article> <!-- Fermeture de l'article précédent -->
 
-    <article id="salle4">
-        <h2 class="titre4">Salle n°4</h2>
-        <div>
-            <img class="imgdroite" src="image/planete_orange.png" alt="image salle 4">
-            <div>
+        <article id="salle4"> <!-- Début de l'article pour la salle 4 avec un identifiant "salle4" -->
+            <h2 class="titre4">Salle n°4</h2> <!-- Un titre de niveau 2 pour la salle 4 avec une classe "titre4" -->
+            <div> <!-- Une division pour le contenu de la salle 4 -->
+                <img class="imgdroite" src="image/planete_orange.png" alt="image salle 4"> <!-- Une image à droite de la salle 4 avec une classe "imgdroite" -->
+                <div> <!-- Une autre division pour le texte de la salle 4 -->
                 <p class="text">La salle est très lumineuse, spacieuse et plutôt bien fournie, dans des tons jaunâtres et orangés.
                     Les murs de cette pièce sont d'immenses écrans LED, donnant l'illusion d'être sur cette nouvelle planète. Dans
                     un coin de la pièce se trouve un panneau de contrôle avec un mot à 8 caractères à saisir. Les joueurs.euses
@@ -131,45 +135,94 @@
                     salle de transition temporelle.</p>
             </div>
         </div>
-    </article>
+    </article> <!-- Fin de l'article précédent -->
 
-    <article id="salle5">
-        <h2 class="titre5">Salle n°5</h2>
-        <div>
-            <img class="imggauche" src="image/toit_meteor.png" alt="image salle 5">
-            <div>
-                <p class="text">Dans cette dernière salle, qui est identique à la première car les joueurs.euses font une boucle
+    <article id="salle5"> <!-- Article pour la salle 5 avec un identifiant "salle5" -->
+        <h2 class="titre5">Salle n°5</h2> <!-- Un titre de niveau 2 pour la salle 5 avec une classe "titre5" -->
+        <div> <!-- Une division pour le contenu de la salle 5 -->
+            <img class="imggauche" src="image/toit_meteor.png" alt="image salle 5"> <!-- Une image à gauche de la salle 5 -->
+            <div> <!-- Une autre division pour le texte de la salle 5 -->
+                <p class="text"> <!-- Un paragraphe de classe "text" -->
+                    Dans cette dernière salle, qui est identique à la première car les joueurs.euses font une boucle
                     temporelle, il se passe la même chose, à une exception près : si les joueurs.euses ont réussi à collecter
                     toutes les reliques et les assembler grâce à la notice, au lieu de voir une météorite s'écraser, ils/elles la
-                    voient exploser. Les lumières passent au rouge, puis redeviennent neutres pour indiquer qu'ils ont réussi.</p>
-
-
+                    voient exploser. Les lumières passent au rouge, puis redeviennent neutres pour indiquer qu'ils ont réussi.
+                </p>
             </div>
         </div>
-    </article>
-
-    <a href="#top">
-        <img src="https://i.giphy.com/media/WhblBSavuBQG7xWOc5/giphy.webp" alt="meterite qui remonte" class="meteorite">
-    </a>
-    <footer id="contact">
-        <div id="gauche">
-            <p> Voyagez aussi à travers nos réseaux sociaux et découvrez de nouvelles expériences</p>
+    </article> <!-- Fin de l'article pour la salle 5 -->
+    
+    <a href="#top"> <!-- Un lien pour remonter en haut de la page -->
+        <img src="https://i.giphy.com/media/WhblBSavuBQG7xWOc5/giphy.webp" alt="météorite qui remonte" class="meteorite" title="Cliquez ici pour remonter le temps avant que la météorite ne s'écrase !" id="meteorite"> <!-- Une image de météorite avec un titre -->
+        <audio id="my-audio" src="tp.mp3"></audio> <!-- Un élément audio pour le fichier audio "tp.mp3" -->
+    </a> <!-- Fin du lien pour remonter en haut -->
+    <footer id="contact"> <!-- La section de pied de page avec un identifiant "contact" -->
+        <div id="gauche"> <!-- Une division pour le contenu de gauche dans le pied de page -->
+            <p> Voyagez aussi à travers nos réseaux sociaux et découvrez de nouvelles expériences</p> <!-- Un paragraphe de texte -->
         </div>
-
-        <div>
-            <a href="https://www.instagram.com/" target="_blank"><img src="image/Instagram.png" alt="instagram" class="imgfooter" height= "80px" width= "80px"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="image/x-logo.png" alt="X" class="imgfooter" height= "80px" width= "80px"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="image/facebook.png" alt="logoface" class="imgfooter" height="85px" width="85px"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt="youtbe" class="imgfooter" height= "80px" width= "114px"></a>
-            <img src="image/LOGO.png" alt="logoesc" height= "250px" width= "250px" id="logo" class="imglogo">
-            <div>
-                <p> Nous contacter : 04 99 04 73 86</p>
-                <address>
-                    <p><a class="under" href="https://www.google.com/maps/place/IUT+Montpellier%2FSète+-+Dep.+Info+%26+GEA/@43.4156097,3.7166743,19z/data=!3m1!4b1!4m6!3m5!1s0x12b13558fcca439f:0x7dba17f133a21189!8m2!3d43.4156097!4d3.7178907!16s%2Fg%2F11rqhcbbs3?entry=ttu" target="_blank">1511 Quai des Moulins, 34200 Sète</a>
-                    <p>&copy; 2023 Voyage Temporel</p>
+    
+        <div> <!-- Une autre division pour le contenu de droite dans le pied de page -->
+            <a href="https://www.instagram.com/" target="_blank"> <!-- Un lien vers Instagram qui s'ouvrira dans un nouvel onglet (attribut "target") -->
+                <img src="image/Instagram.png" alt="instagram" class="imgfooter" height= "80px" width= "80px"> <!-- Une image d'icône Instagram -->
+            </a>
+    
+            <a href="https://twitter.com/" target="_blank"> <!-- Un lien vers Twitter qui s'ouvrira dans un nouvel onglet -->
+                <img src="image/x-logo.png" alt="X" class="imgfooter" height= "80px" width= "80px"> <!-- Une image d'icône Twitter -->
+            </a>
+    
+            <a href="https://www.facebook.com/" target="_blank"> <!-- Un lien vers Facebook qui s'ouvrira dans un nouvel onglet -->
+                <img src="image/facebook.png" alt="logoface" class="imgfooter" height="85px" width="85px"> <!-- Une image d'icône Facebook -->
+            </a>
+    
+            <a href="https://www.youtube.com/" target="_blank"> <!-- Un lien vers YouTube qui s'ouvrira dans un nouvel onglet -->
+                <img src="image/youtube.png" alt="youtbe" class="imgfooter" height= "80px" width= "114px"> <!-- Une image d'icône YouTube -->
+            </a>
+    
+            <img src="image/LOGO.png" alt="logoesc" height= "250px" width= "250px" id="logo" class="imglogo"> <!-- Une image du logo principal du site -->
+            <div> <!-- Une autre division pour le contenu en bas à droite -->
+                <p> Nous contacter : 04 99 04 73 86</p> <!-- Un paragraphe de texte avec un numéro de contact -->
+                <address> <!-- Un élément "address" pour les informations d'adresse -->
+                    <p><a class="under" href="https://www.google.com/maps/place/IUT+Montpellier%2FSète+-+Dep.+Info+%26+GEA/@43.4156097,3.7166743,19z/data=!3m1!4b1!4m6!3m5!1s0x12b13558fcca439f:0x7dba17f133a21189!8m2!3d43.4156097!4d3.7178907!16s%2Fg%2F11rqhcbbs3?entry=ttu" target="_blank">1511 Quai des Moulins, 34200 Sète</a></p>
+                    <!-- Un paragraphe de texte avec un lien vers une adresse Google Maps qui s'ouvrira dans un nouvel onglet -->
+                    <p>&copy; 2023 Voyage Temporel</p> <!-- Un paragraphe de texte avec l'année de copyright -->
                 </address>
             </div>
         </div>
     </footer>
-</body>
-</html>
+    <script>
+        // Sélectionner des éléments HTML et les stocker dans des variables
+        const progressBar = document.getElementById("progress-bar"); // La barre de progression
+        const meteorite = document.getElementById("meteorite"); // L'image de la météorite
+        const gif = document.getElementById("gif"); // L'élément pour afficher le GIF
+        const audio = document.getElementById("my-audio"); // L'élément audio
+    
+        // Fonction pour mettre à jour la barre de progression en fonction du défilement de la page
+        function updateProgressBar() {
+            const windowHeight = window.innerHeight; // Hauteur de la fenêtre du navigateur
+            const documentHeight = document.documentElement.scrollHeight - windowHeight; // Hauteur totale du document
+            const scrolled = window.scrollY; // La quantité de défilement actuelle
+            const progress = (scrolled / documentHeight) * 100; // Calcul du pourcentage de progression
+            progressBar.style.width = progress + "%"; // Mettre à jour la largeur de la barre de progression
+        }
+    
+        // Écouter les événements de défilement de la fenêtre
+        window.addEventListener("scroll", updateProgressBar);
+    
+        // Écouter l'événement de clic sur l'image de la météorite
+        meteorite.addEventListener("click", () => {
+            gif.style.display = "block"; // Afficher le GIF
+            audio.play(); // Jouer le fichier audio
+    
+            document.documentElement.style.overflow = "hidden"; // Masquer la barre de défilement
+    
+            // Définir un délai pour arrêter l'audio, masquer le GIF et rétablir la barre de défilement
+            setTimeout(() => {
+                audio.pause(); // Arrêter l'audio
+                audio.currentTime = 0; // Remettre l'audio au début
+                gif.style.display = "none"; // Cacher le GIF
+                document.documentElement.style.overflow = "auto"; // Rétablir la propriété overflow à sa valeur par défaut
+            }, 2000); // Attendre 2 secondes (2000 millisecondes) avant d'exécuter cette partie du code
+        });
+    </script>
+    </body>
+    </html>

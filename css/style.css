@@ -1,178 +1,186 @@
-/* Styles de base */
-html{
-    scroll-behavior: smooth;
-    height: 100vh;
-    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100),#E5A058FF, #CB9430FF,#CAAED5FF,#312873FF);
+html {
+    scroll-behavior: smooth; /* Défilement fluide */
+    height: 100vh; /* Hauteur de 100% de la vue (viewport height) */
+    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100), #E5A058FF, #CB9430FF, #CAAED5FF, #312873FF); /* Arrière-plan avec un dégradé linéaire */
 }
+
 body {
-    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100),#E5A058FF, #CB9430FF,#CAAED5FF,#312873FF);
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    background-image: linear-gradient(rgb(9, 15, 21), rgb(43, 78, 96), rgb(81, 105, 122), rgb(87, 94, 100), #E5A058FF, #CB9430FF, #CAAED5FF, #312873FF); /* Arrière-plan avec un dégradé linéaire */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'arrière-plan */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0; /* Aucune marge extérieure */
+    padding: 0; /* Aucun espacement intérieur */
+    text-align: center; /* Alignement du texte au centre */
+    position: relative; /* Position relative pour les éléments enfants positionnés */
 }
 
 header {
-    position: fixed;
-    top: 0;/* */
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, transparent,rgba(255, 255, 255, 0.45) 65%),
-    url('../image/voyage-temps.jpeg');
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    z-index: 1; /* Augmentez le z-index du header pour le placer au-dessus des autres éléments */
+    position: fixed; /* Position fixe, reste en haut de la page lors du défilement */
+    top: 0; /* En haut de la page */
+    left: 0; /* À gauche de la page */
+    width: 100%; /* Largeur de 100% de la largeur de la fenêtre */
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.45) 65%), url('../image/voyage-temps.jpeg'); /* Arrière-plan avec dégradé et image */
+    color: #fff; /* Couleur du texte en blanc */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 20px 0; /* Espacement interne de 20px en haut et en bas */
+    z-index: 1; /* Ordre d'empilement au-dessus des autres éléments */
+}
 
+nav {
+    display: flex; /* Affichage en tant que conteneur flexible */
+    position: sticky; /* Position collante, reste visible en défilement */
 }
-nav{
-    display:flex;
-    position: sticky;
-}
+
 nav>div {
-    /*display: block;*/
-    height: 20px;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-nav>div:first-child{
-    margin-left: auto;
-}
-nav>div:last-child{
-    margin-right: auto;
-}
-nav .submenu{
-    display: none;
-}
-nav>div:hover .submenu{
-    display: block;
-    padding:10px;
-}
-div.submenu>div{
-    padding: 5% 1% ;
-    position: relative;
+    height: 20px; /* Hauteur de 20px */
+    margin-left: 3%; /* Marge à gauche de 3% */
+    margin-right: 3%; /* Marge à droite de 3% */
 }
 
-div.submenu{
-    border-radius: 5px;
-    background-image: linear-gradient(#070d12, #464e5e);
+nav>div:first-child {
+    margin-left: auto; /* Marge à gauche automatique pour le premier élément */
 }
-div.submenu > div > a{
-    color: white;
+
+nav>div:last-child {
+    margin-right: auto; /* Marge à droite automatique pour le dernier élément */
+}
+
+nav .submenu {
+    display: none; /* Sous-menu initialement masqué */
+}
+
+nav>div:hover .submenu {
+    display: block; /* Afficher le sous-menu lors du survol */
+    padding: 10px; /* Espacement interne de 10px */
+}
+
+div.submenu>div {
+    padding: 5% 1%; /* Espacement interne */
+    position: relative; /* Position relative pour les éléments enfants positionnés */
+}
+
+div.submenu {
+    border-radius: 5px; /* Coins arrondis */
+    background-image: linear-gradient(#070d12, #464e5e); /* Arrière-plan avec un dégradé linéaire */
+}
+
+div.submenu > div > a {
+    color: white; /* Couleur du texte en blanc */
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration: none; /* Supprimer la décoration des liens */
 }
-nav a, nav>div{
-    color: #000000;
+
+nav a, nav>div {
+    color: #000000; /* Couleur du texte en noir */
 }
 
 .synopsis {
-    padding: 60px;
-    text-align: center;
-    margin: auto;
-    width: 600px;
-    color: #c8e9ff;
-    font-weight: bold;
-    font-family: "Bradley Hand ITC";
-    font-size: 18px;
+    padding: 60px; /* Espacement interne de 60px */
+    text-align: center; /* Alignement du texte au centre */
+    margin: auto; /* Centrer horizontalement */
+    width: 600px; /* Largeur de 600px */
+    color: #c8e9ff; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    font-family: "Bradley Hand ITC"; /* Police de caractères */
+    font-size: 18px; /* Taille de la police */
 }
 
 .synopsis h2 {
-    margin: auto;
-    text-align: center;
-    width: 200px;
-    background-image: linear-gradient(#142c41, #1a2630);
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    font-family: Arial;
-
+    margin: auto; /* Centrer horizontalement */
+    text-align: center; /* Alignement du texte au centre */
+    width: 200px; /* Largeur de 200px */
+    background-image: linear-gradient(#142c41, #1a2630); /* Arrière-plan avec dégradé linéaire */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Espacement interne */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: 150px; /* Marge supérieure de 150px */
+    margin-bottom: 50px; /* Marge inférieure de 50px */
+    font-family: Arial; /* Police de caractères */
 }
-.bouton{
-    margin-top: 50px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #233541, #344f61);
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    animation-duration: .8s;
-    animation-name: clignoter;
-    animation-iteration-count: infinite;
-    transition: none;
-    z-index: 0;
+
+.bouton {
+    margin-top: 50px; /* Marge supérieure de 50px */
+    text-align: center; /* Alignement du texte au centre */
+    background-image: linear-gradient(to bottom, #233541, #344f61); /* Arrière-plan avec dégradé linéaire */
+    color: #fff; /* Couleur du texte en blanc */
+    padding: 10px 20px; /* Espacement interne */
+    text-decoration: none; /* Supprimer la décoration des liens */
+    border-radius: 5px; /* Coins arrondis */
+    animation-duration: .8s; /* Durée de l'animation de clignotement */
+    animation-name: clignoter; /* Nom de l'animation */
+    animation-iteration-count: infinite; /* Animation en boucle infinie */
+    transition: none; /* Aucune transition */
+    z-index: 0; /* Ordre d'empilement */
 }
 
 @keyframes clignoter {
-    0%   { color: #35aaf1; }
-    40%   {color: #6161fa; }
-    100% { opacity: initial; }
+    0% { color: #35aaf1; } /* Couleur au début de l'animation */
+    40% { color: #6161fa; } /* Couleur à 40% de l'animation */
+    100% { opacity: initial; } /* Opacité à la fin de l'animation */
 }
 
 #salle3 > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+    display: flex; /* Utilisez un affichage flexible */
+    flex-direction: row; /* Direction des éléments en ligne (horizontale) */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin: 50px; /* Marge de 50px autour de l'élément */
 }
 
 #salle3 > div > img {
-    margin-left: 5%;
-    margin-right: 10%;
-    height: 24%;
-    width: 24%;
+    margin-left: 5%; /* Marge à gauche de 5% */
+    margin-right: 10%; /* Marge à droite de 10% */
+    height: 24%; /* Hauteur de 24% de l'espace parent */
+    width: 24%; /* Largeur de 24% de l'espace parent */
 }
-#salle3 > div > div >p{
-    color: #f8d4a7;
-    text-align: center;
-    font-family: "Cambria Math";
-    font-size: 25px;
-    background-color: rgba(133, 133, 133, 0.24);
-    border-radius: 10px;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+
+#salle3 > div > div > p {
+    color: #f8d4a7; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    font-family: "Cambria Math"; /* Police de caractères */
+    font-size: 25px; /* Taille de la police */
+    background-color: rgba(133, 133, 133, 0.24); /* Arrière-plan semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5); /* Ombre de la boîte */
 }
 
 .imggauche {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Utilisez un affichage flexible */
+    flex-direction: row; /* Direction des éléments en ligne (horizontale) */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
 }
 
-.imgdroite{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.imgdroite {
+    display: flex; /* Utilisez un affichage flexible */
+    flex-direction: row; /* Direction des éléments en ligne (horizontale) */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
 }
 
-#salle2 > div{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+#salle2 > div {
+    display: flex; /* Utilisez un affichage flexible */
+    flex-direction: row-reverse; /* Direction des éléments en ligne inversée (horizontale) */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin: 50px; /* Marge de 50px autour de l'élément */
 }
 #salle2 > div > img {
-    margin-left: 10%;
-    height: 28%;
-    width: 28%;
+    margin-left: 10%; /* Marge à gauche de 10% */
+    height: 28%; /* Hauteur de 28% de l'espace parent */
+    width: 28%; /* Largeur de 28% de l'espace parent */
 }
-#salle2 > div > div > p{
-    color: #d3d3d3;
-    text-align: center;
-    font-family: "Cambria Math";
-    font-size: 25px;
-    background-color: rgba(133, 133, 133, 0.24);
-    border-radius: 10px;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+#salle2 > div > div > p {
+    color: #d3d3d3; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    font-family: "Cambria Math"; /* Police de caractères */
+    font-size: 25px; /* Taille de la police */
+    background-color: rgba(133, 133, 133, 0.24); /* Arrière-plan semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5); /* Ombre de la boîte */
 }
 
 #salle4>div{
@@ -250,20 +258,22 @@ nav a, nav>div{
 }
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 100px;
+    background-color: #000000; /* Couleur de fond noire */
+    color: #ffffff; /* Couleur du texte en blanc */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 100px; /* Espacement interne de 100px */
 }
-.titre1{
-    margin : auto;
-    width: 120px;
-    text-align: center;
-    padding:10px 10px;
-    background-image: linear-gradient(#283c49, #496071);
-    border-radius: 5px;
-    color: white;
+.titre1 {
+    margin: auto; /* Centrer horizontalement */
+    width: 120px; /* Largeur de 120px */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 10px 10px; /* Espacement interne */
+    background-image: linear-gradient(#283c49, #496071); /* Arrière-plan avec dégradé linéaire */
+    border-radius: 5px; /* Coins arrondis */
+    color: white; /* Couleur du texte en blanc */
 }
+
+/* Styles pour les autres titres (similaires à titre 1) */
 
 .titre2{
     margin : auto;
@@ -304,49 +314,45 @@ footer {
     border-radius: 5px;
     color: white;
 }
-img.meteorite{
-    height: 70px;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
+img.meteorite {
+    height: 70px; /* Hauteur de 70px */
+    position: fixed; /* Position fixe */
+    bottom: 50px; /* À 50px du bas */
+    right: 20px; /* À 20px de la droite */
 }
 #salle1 {
-    padding-top: 130px;
+    padding-top: 130px; /* Espacement supérieur de 130px */
 }
-#salle2 {
-    padding-top: 150px;
+#salle2, #salle3, #salle4, #salle5 {
+    padding-top: 150px; /* Espacement supérieur de 150px */
 }
-#salle3 {
-    padding-top: 150px;
+
+.text {
+    padding: 5% 5%; /* Espacement interne de 5% */
 }
-#salle4 {
-    padding-top: 150px;
+#logo {
+    filter: invert(); /* Inversion des couleurs de l'image */
 }
-#salle5 {
-    padding-top: 150px;
+
+/* Styles pour l'adresse dans le pied de page */
+address {
+    text-decoration: none; /* Supprimer la décoration des liens */
+    color: white; /* Couleur du texte en blanc */
+    font-style: normal; /* Style de texte normal */
 }
-.text{
-    padding: 5% 5%;
-}
-#logo{
-    filter:invert();
-}
-address{
-    text-decoration:none;
-    color: white;
-    font-style: normal;
-}
+/* Styles pour le contact */
 #contact > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex; /* Utilisez un affichage flexible */
+    flex-direction: row; /* Direction des éléments en ligne (horizontale) */
+    align-items: center; /* Centre les éléments verticalement */
 }
+
 #contact > div > img {
-    margin: 0px  300px 0px 180px ;
+    margin: 0px 300px 0px 180px; /* Marge autour de l'image */
 }
-#gauche > p{
-    text-align: left;
-    font-size: 13px;
+#gauche > p {
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 13px; /* Taille de la police */
 }
 .imgfooter{
     margin: 0px  10px 0px 10px ;
@@ -358,4 +364,55 @@ address{
     color: white;
     text-decoration: none;
 }
+/* Styles pour la barre de progression en haut de la page */
+.progress-container {
+    background: black; /* Barre de progression rouge */
+    height: 5px; /* Hauteur de 5px */
+    width: 100%; /* Largeur de 100% de la largeur de la vue */
+    position: fixed; /* Position fixe en haut de la page */
+    bottom: 85.5%; /* À 85% du bas de la page */
+}
 
+.progress-bar {
+    background: skyblue; /* Barre de progression bleue */
+    height: 100%; /* Hauteur de 100% */
+    width: 0; /* La largeur augmentera en fonction de la progression */
+    transition: width 0.3s ease-in-out; /* Transition douce pour la largeur */
+}
+/* Styles pour l'overlay (utilisé pour le chargement) */
+.overlay {
+    position: fixed; /* Position fixe pour couvrir la page */
+    top: 0; /* En haut de la page */
+    left: 0; /* À gauche de la page */
+    width: 100%; /* Largeur de 100% de la largeur de la vue */
+    height: 100%; /* Hauteur de 100% de la hauteur de la vue */
+    background: rgba(0, 0, 0, 0.8); /* Couleur de fond semi-transparente */
+    display: none; /* Pour le masquer initialement */
+    z-index: 999; /* Placez-le au-dessus du contenu de la page */
+}
+
+/* Styles pour les gifs en plein écran */
+#gif.fullscreen {
+    position: fixed; /* Position fixe pour couvrir la page */
+    top: 0; /* En haut de la page */
+    left: 0; /* À gauche de la page */
+    width: 100vw; /* Largeur de 100% de la largeur de la vue */
+    height: 100vh; /* Hauteur de 100% de la hauteur de la vue */
+    z-index: 9999; /* Profondeur élevée pour couvrir tout le contenu */
+    display: none; /* Pour le masquer initialement */
+}
+
+#gif {
+    width: 100%; /* Largeur de 100% */
+    height: 100%; /* Hauteur de 100% */
+}
+/* Pour agrandir les images des salles 2, 3, 4 et 5 */
+#salle2 > div > img, #salle3 > div > img, #salle4 > div > img, #salle5 > div > img {
+    margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
+    height: 200%; /* Augmentation de la hauteur à 40% de l'espace parent */
+    width: 200%; /* Augmentation de la largeur à 40% de l'espace parent */
+}
+/* Pour ajouter de l'espace entre le texte et l'image */
+#salle2 > div > div > p, #salle3 > div > div > p, #salle4 > div > div > p, #salle5 > div > div > p {
+    margin-left: 10px; /* Ajout de marge à gauche pour créer un espace */
+}

@@ -2,46 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style_transition.css">
-    <title>transition</title>
-    <link rel="icon" href="image/favicon-32x32bg.png">
+    <link rel="stylesheet" href="./css/style_transition.css"> <!-- Lien vers une feuille de style externe -->
+    <title>transition</title> <!-- Titre de la page -->
+    <link rel="icon" href="image/favicon-32x32bg.png"> <!-- Icône de la page dans l'onglet du navigateur -->
 </head>
 <body>
-<div id="message-container">
-    <div id="message-box">
-        <p>Bienvenue dans la salle de transition. Préparez-vous pour une aventure temporelle passionnante !</p>
-        <button id="start-button">OK</button>
+<div id="message-container"> <!-- Conteneur pour le message de bienvenue -->
+    <div id="message-box"> <!-- Boîte de message -->
+        <p>Êtes-vous prêts à entrer dans la magie de l'escape game ? Si oui, appuyez sur OK et franchissez le portail !</p> <!-- Message de bienvenue -->
+        <button id="start-button">OK</button> <!-- Bouton "OK" -->
     </div>
 </div>
-<audio id="my-audio" src="tp.mp3"></audio>
-<button id="button">Portail</button>
-<div id="gif-container">
-    <img src="./image/6xwT.gif" alt="GIF">
+<audio id="my-audio" src="tp.mp3"></audio> <!-- Élément audio pour le son -->
+<button id="button">Portail</button> <!-- Bouton "Portail" -->
+<div id="gif-container"> <!-- Conteneur pour le GIF -->
+    <img src="./image/gif7.gif" alt="GIF"> <!-- Image GIF -->
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var messageContainer = document.getElementById("message-container");
-     var startButton = document.getElementById("start-button");
+    document.addEventListener("DOMContentLoaded", function() { //<!-- Attend que le document soit complètement chargé -->
+    var messageContainer = document.getElementById("message-container"); //<!-- Sélectionne le conteneur du message -->
+     var startButton = document.getElementById("start-button"); //<!-- Sélectionne le bouton "OK" -->
 
     startButton.addEventListener("click", function() {
-        messageContainer.style.display = "none"; // Masquer le message
+        messageContainer.style.display = "none"; // Masquer le message lorsque le bouton est cliqué
    });
 }); 
-    var startButton = document.getElementById("button");
-    var gifContainer = document.getElementById("gif-container");
-    var audio = document.getElementById("my-audio");
+    var startButton = document.getElementById("button"); //<!-- Sélectionne le bouton "Portail" -->
+    var gifContainer = document.getElementById("gif-container"); //<!-- Sélectionne le conteneur du GIF -->
+    var audio = document.getElementById("my-audio"); //<!-- Sélectionne l'élément audio -->
 
 
-    startButton.addEventListener("click", function() {
-        startButton.style.display = "none"; // Cacher le bouton
+    startButton.addEventListener("click", function() { //<!-- Ajoute un événement au clic sur le bouton "Portail" -->
+        startButton.style.display = "none"; // Cacher le bouton lorsque cliqué
         gifContainer.style.display = "block"; // Afficher le GIF
-        audio.play(); // joue le son
+        audio.play(); // Jouer le son
 
-
-        // Rediriger l'utilisateur vers l'autre page après 10 secondes
+        // Rediriger l'utilisateur vers l'autre page après 3 secondes (3000 millisecondes)
         setTimeout(function() {
-            window.location.href = "./index_escape.html";
+            window.location.href = "./index_escape.html"; // Redirige vers la page "index_escape.html"
         }, 3000); // 3 secondes
     });
 </script>

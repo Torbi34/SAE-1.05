@@ -6,26 +6,29 @@
         <link rel="stylesheet" href="./css/style_resa.css">
         <link rel="icon" href="image/favicon-32x32bg.png">
     </head>
+    <header>
+        Réserver une séance
+    </header>
     <body class="body">
-        <h1 class="title1">Date et Heure</h1>
+        <h1 class="title1">Date et heure</h1>
         <form action="send.php" method="post">
             <article class="s" id="first">
                 <div>
-                    <label for="choose">Choisir votre Salle:</label>
+                    <label for="choose">Choisir votre Salle :</label>
                     <select id="choose">
                         <option value="1">Voyage temporel</option>
                     </select>
                 </div>
                 <div>
-                    <label for="date">Choisir votre date:</label>
+                    <label for="date">Choisir votre date :</label>
                     <input id="date" type="date">
                 </div>
                 <div>
-                    <label for="hour">Choisez votre heure:</label>
+                    <label for="hour">Choisez votre heure :</label>
                     <input id="hour" type="time">
                 </div>
                 <div>
-                <label for="choose2">Choisir le nombre de personnes:</label>
+                <label for="choose2">Choisir le nombre de personnes :</label>
                     <select id="choose2">
                         <option value="2">2 personnes, 30 euros</option>
                         <option value="3">3 personnes, 40 euros</option>
@@ -33,29 +36,29 @@
                     </select>
                 </div>
             </article>
-            <h1 class="title1">Information personnel</h1>
+            <h1 class="title1">Informations personnelles</h1>
             <article class="s" id="first">
                 <div>
-                    <label for="name">Nom:</label>
+                    <label for="name">Nom :</label>
                     <input id="name" required placeholder="Entrez votre nom" type="text">
                 </div>
                 <div>
-                    <label for="surname">Prenom:</label>
+                    <label for="surname">Prenom :</label>
                     <input id="surname" required placeholder="Entrez votre prenom" type="text">
                 </div>
                 <div>
-                    <label for="email">Email:</label>
+                    <label for="email">Adresse e-mail :</label>
                     <input id="email" required placeholder="Entrez votre mail" type="email">
                 </div>
                 <div>
-                    <label for="tel">Telephone:</label>
+                    <label for="tel">Numéro de téléphone :</label>
                     <input id="tel" required placeholder="Entrez votre n°" type="tel">
                 </div>
             </article>
-            <h1 class="title1">Autres Informations</h1>
+            <h1 class="title1">Autres informations</h1>
             <article class="s" id="first">
                 <div>
-                <label for="ecrire">Ecrire des informations suplémentaire...</label>
+                <label for="ecrire">Informations suplémentaire...</label>
                 </div>
                 <div>
                 <textarea id="ecrire" rows="3" cols="80">
@@ -68,8 +71,4 @@
         </form>
         
     </body>
-
-
-
-
 </html>

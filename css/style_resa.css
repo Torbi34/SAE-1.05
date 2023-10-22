@@ -1,14 +1,15 @@
 h1{
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    background:linear-gradient(#0c143a, rgb(26, 46, 117));
     margin: 15px 350px 15px;
     border-radius: 30px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    color: white;
 }
 .s{
     text-align: center;
-    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    background:linear-gradient(#304081, rgb(73, 118, 166));
     padding: 20px;
     margin: 20px 120px 20px;
     border-radius: 15px;
@@ -19,9 +20,14 @@ h1{
     margin: 5px;
 }
 #first > div > label{
-    background-color: #d8f5ff;
-    border-radius: 30px;
+    background-color: #b8e0e3;
+    border-radius: 10px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    color: #000000;
+    padding: 1px 3px 1px 3px;
+}
+#first > div > textarea{
+    border-radius: 10px;
 }
 #first > div > input {
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
@@ -33,18 +39,19 @@ h1{
 }
 .t{
     text-align: center;
-    background:linear-gradient(lightblue,rgb(52, 136, 231));
+    background:linear-gradient(#0e163c, rgb(28, 48, 118));
     padding: 20px;
-    margin: 20px 400px 20px;
+    margin: 20px 300px 20px;
     border-radius: 30px;
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
 .t1{
     color: white;
+    font-weight: bold;
 }
 #sub > input{
-    background-color: rgb(71, 71, 236);
+    background-color: rgb(47, 91, 208);
     border-radius: 30px;
     height: 50px;
     width: 100px;
@@ -56,5 +63,16 @@ h1{
     background-position:fixed;
     background-repeat: no-repeat;
     background-size:cover;
-   
+}
+header{
+    text-align: center;
+    background:linear-gradient(#364069, rgb(28, 48, 118));
+    padding: 20px;
+    margin: 20px 300px 20px;
+    border-radius: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    font-size: 30px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
